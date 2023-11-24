@@ -10,42 +10,69 @@
 
 /* Social media picture styling */
 
-.social-media{
-     width:80px
-}
+
 
 
 
 
 /* Header Styling */
 header{
-    display: flex;
-    justify-content: space-between;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
     padding: 10px;
     background-color: grey;
     align-items: center;
 }
-
-
-.header-part-1{
+.contentOfPartsOfTheWeb{
     display: flex;
-    justify-content: space-between;
-    position: relative;
+     
 }
 
-.header-part-2{
+.menu{
     display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #0782a2;
+    margin: auto;
+}
+
+.social-media{
+    
+    width:80px;
+    
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    row-gap: 20px;   
     position: relative;
 }
-
-
-
-
-body{
-    background: white;
+.links{
+    display: flex;
+    
 }
+
+
+body  {
+    background: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit,
+    mixmax(150px,1fr))
+    
+}
+/* display: grid;
+    grid-template-columns:
+    repeat(auto-fit,
+    mixmax(150px,1fr)) ; */
 
 
 .content-cabecera{
