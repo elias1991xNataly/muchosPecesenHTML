@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     
+    
 }
 
 
@@ -22,13 +23,36 @@ header{
     grid-template-columns: 1fr 1fr 1fr;
     
     padding: 10px;
-    background-color: grey;
+    background-color: white;
     align-items: center;
 }
 .contentOfPartsOfTheWeb{
     display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    color: black;
      
 }
+/* #36384c
+#0782a2
+#0d154d */
+
+.contentOfPartsOfTheWeb a{
+    color:black;
+    text-decoration: none;
+    display: inline-block;
+    padding:10px 15px;
+    line-height: normal;
+    font-size: 14px;
+    transition: all 500ms ease;
+    border-bottom: 4px solid transparent;
+}
+
+.contentOfPartsOfTheWeb a:hover{
+  color:#36384c ;
+  border-bottom: 4px solid #0d154d;
+}
+
 
 .menu{
     display: flex;
@@ -54,16 +78,16 @@ header{
     row-gap: 20px;   
     position: relative;
 }
-.links{
-    display: flex;
-    
-}
 
 
+/* Body de la pagina Web */
+
+/* Responsive con Grid */
 body  {
-    background: white;
+    background-color:#0782a2 ;
     width: 100%;
     display: grid;
+    gap: 2em;
     grid-template-columns:
     repeat(auto-fit,
     mixmax(150px,1fr))
@@ -74,7 +98,7 @@ body  {
     repeat(auto-fit,
     mixmax(150px,1fr)) ; */
 
-
+/* Encabezado */
 .content-cabecera{
     width: 100%;
     margin-top: 50px;
@@ -86,7 +110,7 @@ body  {
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #0782a2;
+    border: 3px solid#0d154d;
     margin: auto;
 }
 
@@ -109,10 +133,14 @@ body  {
 .content-moto p{
     margin-top: 20px
 }
-
+/* Imagen de Portada */
+.imagenPrincipal{
+    display: flex;
+    justify-content: center;
+}
 
 .imagenPiscina{
-    width: 100%;
+    width: 70%;
 }
 
 
@@ -120,7 +148,29 @@ body  {
     display: flex;
 
 }
+/* Section 1 Content 1 */
 
+#photoInDiag{
+
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    
+}
+
+#introduction{
+    padding-top: 5%;
+}
+
+.orientation{
+    padding-top: 5%;
+}
 
 /* section 2 Our Center */
 .absoluteTitle{
@@ -128,10 +178,45 @@ body  {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5%;
+}
+.imgOfCenter{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.poolDetails{
+    width: 50%;
+}
+
+
+.textInMosaic{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+   
+}
+
+.textInMosaic1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.textInMosaic2{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#photo-aside{
+    width: 300px;
 }
 
 /* Responsive web design */
-@media  (width <= 320px){
+/* @media  (width <= 320px){
     .content-moto
 {background-color: red;
     width: 100%;
@@ -151,7 +236,57 @@ body  {
 {background-color: green;
 
 }
+} */
+
+
+.typeOfClasses{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
 }
+
+.textOfClases{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    padding-top: 5%;
+    justify-content: center;
+    
+}
+
+.classDescription{
+    padding-top: 5%;
+}
+
+
+.ourMethods{
+    
+display: flex;
+flex-direction: column;
+padding: 5%;
+
+}
+#separador{
+    position: relative;
+    width: 100%;
+    color: black;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid black;
+    margin-top: 16px;
+}
+
+#imgOfFinal{
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
@@ -159,4 +294,49 @@ body  {
 .whereAreWe{
     width: 100%;
     height: 600px;
+}
+
+
+
+
+/* Footer */
+
+
+footer{
+    width: 100%;
+   
+    bottom: 0;
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color:#fff;
+    padding: 100px 0 30px;
+    
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{ 
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#col{
+    flex-basis: 25%;
+    padding: 10px;
+    
+}
+.logo{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    border-radius: 300px;
+}
+
+#footerLinks{
+    display: flex;
+    flex-direction: column;
 }
